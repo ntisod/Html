@@ -1,0 +1,11 @@
+body {
+    color: black;
+}
+
+footer{
+    padding: 10px;
+    width: auto;
+    text-align: right;
+    background-color: white;
+    color: black;
+}
