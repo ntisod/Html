@@ -1,6 +1,17 @@
-body {
-    color: black;
-    background-color: burlywood;
+header{
+    background-color: lightgray;
+}
+
+nav{
+    background-color: white;
+}
+
+main{
+    background-color: white;
+}
+
+footer{
+    background-color: lightgray;
 }
 
 footer{
@@ -9,4 +20,23 @@ footer{
     text-align: right;
     background-color: white;
     color: black;
+}
+
+a{
+    color: white;
+    background-color: #555555;
+    border: 2px solid #555555;
+    border-radius: 10px;
+    padding: 9px;
+    margin: 8px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+a:active{
+    border-width: 4px;
 }
