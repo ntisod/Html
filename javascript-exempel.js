@@ -16,3 +16,52 @@ function light() {
     }
 
   }
+
+function writeText(){
+    var namn = document.getElementById("fnamn").value;
+    document.getElementById("Text").innerHTML = namn;
+  }
+
+function respons(){
+    var x, text;
+
+    x = document.getElementById("fnamn").value;
+
+    text = "Hej " + x + "!";
+    document.getElementById("Text").innerHTML = text
+}
+
+function calculator() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var text;
+    if (document.getElementById("expression").value == "+") {
+      text = (num1 + num2);
+    }
+    else if (document.getElementById("expression").value == "-") {
+      text = parseFloat(num1 - num2);
+    }
+    else if (document.getElementById("expression").value == "*") {
+      text = parseFloat(num1 * num2);
+    }
+    else if (document.getElementById("expression").value == "/") {
+      text = parseFloat(num1 / num2);
+    }
+  
+    document.getElementById("num3").value = text;
+  }
+  
+  function changeexpression() {
+    if (document.getElementById("expression").value == "+") {
+      document.getElementById("expression").value = "-";
+    }
+    else if (document.getElementById("expression").value == "-") {
+      document.getElementById("expression").value = "*";
+    }
+    else if (document.getElementById("expression").value == "*") {
+      document.getElementById("expression").value = "/";
+    }
+    else if (document.getElementById("expression").value == "/") {
+      document.getElementById("expression").value = "+";
+    }
+  }
