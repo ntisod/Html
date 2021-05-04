@@ -1994,13 +1994,6 @@ h6 {
 /* Remove margins from "page content" on small screens */
 
 
-
-
-
-
-
-
-
 ::-webkit-scrollbar
 {
     width: 0;
