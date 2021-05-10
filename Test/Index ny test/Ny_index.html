@@ -8,8 +8,34 @@
         <script src="Ny_Js copy.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="swatchbook.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="modernize.js"></script>
+
+        <script type="text/javascript" src="Change_color.js"></script>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="swatchbook.js"></script>
+        <script type="text/javascript">
+          $(function() {
+          
+            $( '#sb-container' ).swatchbook( {
+              // number of degrees that is between each item
+              angleInc : 15,
+              neighbor : 15,
+              // if it should be closed by default
+              initclosed : true,
+              // index of the element that when clicked, triggers the open/close function
+              // by default there is no such element
+              closeIdx : 11
+            } );
+          
+          });
+        </script>
+
     </head>
-<body class="black">
+<body class="black" id="change">
 <div id="progressbarR"></div>
 <div id="progressbarL"></div>
 <div id="scrollPath"></div>
@@ -20,11 +46,11 @@
 <nav class="sidebar bar-block small hide-small center">
   <!-- Avatar image in top left corner -->
   <img src="PJ_logo.jpg" style="width:100%">
-  <a href="#" class="bar-item button padding-large black">
+  <a href="#" class="bar-item button padding-large black" id="change">
     <i class="fa fa-home xxlarge"></i>
     <p>HEM</p>
   </a>
-  <a href="#about" class="bar-item button padding-large black" onclick="progressbar()">
+  <a href="#about" class="bar-item button padding-large black" onclick="progressbar()" id="change">
     <i class="fa fa-user xxlarge"></i>
     <p>OM</p>
   </a>
@@ -267,7 +293,7 @@
       <p><input class="input padding-16" type="text" placeholder="Subjekt" id="Subject" required name="Subject"></p>
       <p><input class="input padding-16" type="text" placeholder="Medelande" id="Message" required name="Medelande"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit" onclick="email()">
+        <button class="button light-grey padding-large" type="submit" onclick="email()">
           <i class="fa fa-paper-plane"></i> Skicka
         </button>
       </p>
@@ -289,5 +315,87 @@
   </footer>
   <!-- END PAGE CONTENT -->
 </div>
+
+<div class="container">
+			
+  <header>
+
+      <div class="support-note"><!-- let's check browser support with modernizr -->
+          <!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+          <span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+          <!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+          <span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+          <span class="note-ie">Sorry, only modern browsers.</span>
+      </div>
+      
+  </header>
+  
+  <nav class="hide-small">
+
+    <section class="main">
+    
+        <div id="sb-container" class="sb-container">
+        
+            <div>
+                <h4><span><button onclick="change_color('cinnabar')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Cinnabar</span></h4>
+            </div>
+            <div>
+                <h4><span><button onclick="change_color('burnt-orange')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Burnt Orange</span></h4>
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('carrot-orange')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Carrot Orange</span></h4>
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('turbo')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Turbo</span></h4>
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('lemon')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Lemon</span></h4>
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('limerick')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Limerick</span></h4>
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('water-course')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Water<br>course</span></h4>										
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('curious-blue')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Curious Blue</span></h4>											
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('governor-bay')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Governor Bay</span></h4>											
+            </div>	
+            <div>
+                <h4><span><button onclick="change_color('affair')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Affair</span></h4>											
+            </div>
+            <div>
+                <h4><span><button onclick="change_color('medium-violet-red')" class="button-swatchbook">Ändra färg</button></span></h4>
+                <h4><span>Medium Violet Red</span></h4>											
+            </div>
+            <div>
+                <h4><span>Färger</span></h4>
+                <span class="sb-toggle">Klicka för att öppna/stäng</span>
+                <span class="sb-toggle"><button style="color: rgb(109, 109, 109);background-color: inherit;border-color: gray;" onclick="change_color('black')">Svart</button></span>
+            </div>
+            
+            
+        </div><!-- sb-container -->
+        
+    </section>
+  </nav>
+  
+</div>
+
+<div style="height: 200px;"></div>
+
+
 </body>
 </html>

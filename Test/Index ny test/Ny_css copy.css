@@ -1657,6 +1657,72 @@ a {
 	background-color: #ddffff!important
 }
 
+.cinnabar,
+.hover-cinnabar:hover {
+	color: #000!important;
+	background-color: #ea2a29!important
+}
+
+.burnt-orange,
+.hover-burnt-orange:hover {
+	color: #000!important;
+	background-color: #f16729!important
+}
+
+.carrot-orange,
+.hover-carrot-orange:hover {
+	color: #000!important;
+	background-color: #f89322!important
+}
+
+.turbo,
+.hover-turbo:hover {
+	color: #000!important;
+	background-color: #ffcf14!important
+}
+
+.lemon,
+.hover-lemon:hover {
+	color: #000!important;
+	background-color: #ffea0d!important
+}
+
+.limerick,
+.hover-limerick:hover {
+	color: #000!important;
+	background-color: #87b11d!important
+}
+
+.water-course,
+.hover-water-course:hover {
+	color: #000!important;
+	background-color: #008253!important
+}
+
+.curious-blue,
+.hover-curious-blue:hover {
+	color: #000!important;
+	background-color: #3277b5!important
+}
+
+.governor-bay,
+.hover-governor-bay:hover {
+	color: #000!important;
+	background-color: #4c549f!important
+}
+
+.affair,
+.hover-affair:hover {
+	color: #000!important;
+	background-color: #764394!important
+}
+
+.medium-violet-red,
+.hover-medium-violet-red:hover {
+	color: #000!important;
+	background-color: #ca0d86!important
+}
+
 .text-amber,
 .hover-text-amber:hover {
 	color: #ffc107!important
