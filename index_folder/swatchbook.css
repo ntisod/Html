@@ -101,12 +101,10 @@
 	border-radius: 50%;
 	background: #dddddd;
 	background: -moz-linear-gradient(-45deg, #dddddd 0%, #58535e 48%, #889396 100%);
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#dddddd), color-stop(48%,#58535e), color-stop(100%,#889396));
 	background: -webkit-linear-gradient(-45deg, #dddddd 0%,#58535e 48%,#889396 100%);
 	background: -o-linear-gradient(-45deg, #dddddd 0%,#58535e 48%,#889396 100%);
 	background: -ms-linear-gradient(-45deg, #dddddd 0%,#58535e 48%,#889396 100%);
 	background: linear-gradient(135deg, #dddddd 0%,#58535e 48%,#889396 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#889396',GradientType=1 );
 	box-shadow: -1px -1px 1px rgba(0,0,0,0.7), 1px 1px 1px rgba(255,255,255,0.1);
 }
 
@@ -194,7 +192,6 @@ span.sb-icon:before {
 	font-family: 'icons';
 	font-style: normal;
 	font-weight: normal;
-	speak: none;
 	display: block;
 	text-decoration: inherit;
 	text-align: center;
@@ -428,8 +425,6 @@ span.sb-icon:before {
 	background: #ffffff;
  /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
- /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));
  /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
  /* Chrome10+,Safari5.1+ */
@@ -437,9 +432,7 @@ span.sb-icon:before {
  /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
  /* IE10+ */
-	background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
- /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+	background: linear-gradient(to top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
  /* IE6-9 */
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -464,8 +457,6 @@ span.sb-icon:before {
 	border-color: #d9d9d9;
 	color: #aaa;
 	box-shadow: 0 1px 1px rgba(255,255,255,0.7);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#f6f6f6',GradientType=0 );
- /* IE6-9 */;
 }
   /* .support-note span{
       color: #ac375d;

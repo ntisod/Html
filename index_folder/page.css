@@ -68,7 +68,6 @@ a:hover {
 abbr[title] {
 	border-bottom: none;
 	text-decoration: underline;
-	text-decoration: underline dotted;
 }
 
 b,
@@ -169,7 +168,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-	outline: 1px dotted ButtonText;
+	outline: 1px dotted;
 }
 
 fieldset {
@@ -320,14 +319,6 @@ a {
 }
 
 .striped tbody tr:nth-child(even) {
-	background-color: #f1f1f1;
-}
-
-.table-all tr:nth-child(odd) {
-	background-color: #fff;
-}
-
-.table-all tr:nth-child(even) {
 	background-color: #f1f1f1;
 }
 
@@ -559,7 +550,6 @@ a {
 
 .modal-content {
 	margin: auto;
-	background-color: #fff;
 	position: relative;
 	padding: 0;
 	outline: 0;
@@ -869,11 +859,7 @@ a {
 	.modal-content {
 		margin: 0 10px;
 		width: auto!important;
-	}
-
-	.modal {
-		padding-top: 30px;
-	}
+	}	
 
 	.dropdown-hover.mobile .dropdown-content,
 	.dropdown-click.mobile .dropdown-content {
@@ -2424,31 +2410,6 @@ h6 {
 
 .wrapper span:last-child {
 	filter: blur(20px);
-}
-
-#firstprogress {
-	--hello: 80%;
-	animation: animateprogressbar 1s ease-in-out;
-}
-
-#secondprogress {
-	--hello: 90%;
-	animation: animateprogressbar 1s ease-in-out;
-}
-
-#thirdprogress {
-	--hello: 75%;
-	animation: animateprogressbar 1s ease-in-out;
-}
-
-@keyframes animateprogressbar {
-	0% {
-		width: 0%;
-	}
-
-	100% {
-		width: var(--hello);
-	}
 }
 
 .img-blur {
