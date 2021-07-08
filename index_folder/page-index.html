@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>PJ</title>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="page.css">
+					<script src="page.js"></script>
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+							<link rel="stylesheet" type="text/css" href="swatchbook.css"/>
+							<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic" rel='stylesheet' type='text/css'>
+								<script type="text/javascript" src="modernize.js"></script>
+								<script type="text/javascript" src="Change-color.js"></script>
+								<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+								<script type="text/javascript" src="swatchbook.js"></script>
+								<script type="text/javascript">
+          $(function() {
+          
+            $( '#sb-container' ).swatchbook( {
+              // number of degrees that is between each item
+              angleInc : 15,
+              neighbor : 15,
+              // if it should be closed by default
+              initclosed : true,
+              // index of the element that when clicked, triggers the open/close function
+              // by default there is no such element
+              closeIdx : 11
+            } );
+          
+          });
+        </script>
+							</head>
+							<body class="black" id="change-1">
+								<div id="progressbarR"></div>
+								<div id="progressbarL"></div>
+								<div id="scrollPath"></div>
+								<!-- Icon Bar (Sidebar - hidden on small screens) -->
+								<nav class="sidebar bar-block small hide-small center" id="change-2">
+									<!-- Avatar image in top left corner -->
+									<img src="PJ-logo.jpg" alt="My logo" style="width:100%">
+										<a href="#" class="bar-item button padding-large black" id="change-3">
+											<i class="fa fa-home xxlarge"></i>
+											<p>HEM</p>
+										</a>
+										<a href="#about" class="bar-item button padding-large black" onclick="progressbar()" id="change-4">
+											<i class="fa fa-user xxlarge"></i>
+											<p>OM</p>
+										</a>
+										<a href="#pages" class="bar-item button padding-large black" id="change-5">
+											<i class="fa fa-folder-open xxlarge"></i>
+											<p>SIDOR</p>
+										</a>
+										<a href="#photos" class="bar-item button padding-large black" id="change-6">
+											<i class="fa fa-eye xxlarge"></i>
+											<p>FOTON</p>
+										</a>
+										<a href="#contact" class="bar-item button padding-large black" id="change-7">
+											<i class="fa fa-envelope xxlarge"></i>
+											<p>KONTAKT</p>
+										</a>
+										<div class="loader"></div>
+										<div class="wrapper">
+											<div class="display">
+												<div id="time"></div>
+											</div>
+											<span></span>
+											<span></span>
+										</div>
+									</nav>
+									<!-- Navbar on small screens (Hidden on medium and large screens) -->
+									<div class="top hide-large hide-medium" id="myNavbar">
+										<div class="bar black opacity hover-opacity-off center small">
+											<a href="#" class="bar-item button" style="width:25% !important">HEM</a>
+											<a href="#about" class="bar-item button" style="width:25% !important">OM</a>
+											<a href="#photos" class="bar-item button" style="width:25% !important">FOTON</a>
+											<a href="#contact" class="bar-item button" style="width:25% !important">KONTAKT</a>
+										</div>
+									</div>
+									<!-- Page Content -->
+									<div class="padding-large" id="main">
+										<!-- Header/Home -->
+										<header class="container padding-32 center" id="home">
+											<h1 class="jumbo">Philip Jensen</h1>
+											<br>
+												<!--  Om jag vill lägga till och fixa
+    <div class="box"><div class="imgBx"><img src="First_Pic.jpg" alt="boy" class="image" width="350" height="400"></div><div class="content"><h2>Jag <br><span>också jag</span></h2></div></div>
+    -->
+												<img src="First-Pic.jpg" alt="boy" class="image" width="350" height="400">
+												</header>
+												<!-- About Section -->
+												<div class="content justify text-gray padding-64" id="about">
+													<h2 class="text-light-grey">Philip</h2>
+													<hr style="width:200px" class="opacity">
+														<p>Jag är född den 10 aug 2003. 
+															
+															<br> Jag är 17 år och går på NTIgymnasiet i södertälje hamn. 
+																
+																<br> Jag gillar att cykla, köra cross, köra bil, spela och mer.
+																
+																</p>
+																<h3 class="padding-16 text-light-grey">My Skills</h3>
+																<p class="wide">Kodning</p>
+																<div class="white">
+																	<div class="dark-grey" style="height:28px;width:80%;text-align: end;font-size: medium;padding-right: 5px;" id="firstprogress">80%</div>
+																</div>
+																<p class="wide">Cross</p>
+																<div class="white">
+																	<div class="dark-grey" style="height:28px;width:90%;text-align: end;font-size: medium;padding-right: 5px;" id="secondprogress">90%</div>
+																</div>
+																<p class="wide">Blender</p>
+																<div class="white">
+																	<div class="dark-grey" style="height:28px;width:75%;text-align: end;font-size: medium;padding-right: 5px;" id="thirdprogress">75%</div>
+																</div>
+																<br>
+																	<div class="row center padding-16 section light-grey">
+																		<div class="quarter section">
+																			<span class="xlarge">40+</span>
+																			<br>
+                                          Kodnings porjekt
+      
+																			
+																			</div>
+																			<div class="quarter section">
+																				<span class="xlarge">10 000h+</span>
+																				<br>
+                                          Cross körande
+      
+																				
+																				</div>
+																				<div class="quarter section">
+																					<span class="xlarge">20+</span>
+																					<br>
+                                          Blenders
+      
+																					
+																					</div>
+																					<div class="quarter section">
+																						<span class="xlarge">0</span>
+																						<br>
+                                          Jobb
+      
+																						
+																						</div>
+																					</div>
+																					<!-- Grid for pricing tables -->
+																					<div class="content justify text-grey padding-64" id="pages">
+																						<h3 class="padding-16 text-light-grey">Mina sidor</h3>
+																						<div class="row-padding" style="margin:0 -16px">
+																							<div class="quarter margin-bottom">
+																								<ul class="ul white center opacity hover-opacity-off">
+																									<li class="dark-grey xlarge padding-32">Formulär</li>
+																									<li class="padding-16">Välj Dina</li>
+																									<li class="padding-16">Induviduella</li>
+																									<li class="padding-16">Val</li>
+																									<li class="light-grey padding-24">
+																										<button class="button white padding-large hover-black" onclick="window.location.href='https://ntisod.github.io/Html/Fomul%C3%A4r'">Länk!</button>
+																									</li>
+																								</ul>
+																							</div>
+																							<div class="quarter">
+																								<ul class="ul white center opacity hover-opacity-off">
+																									<li class="dark-grey xlarge padding-32">Knapp</li>
+																									<li class="padding-16">En knapp</li>
+																									<li class="padding-16">Bara en knapp</li>
+																									<li class="padding-16">Inget mer än en knapp</li>
+																									<li class="light-grey padding-24">
+																										<button class="button white padding-large hover-black" onclick="window.location.href='https://ntisod.github.io/Html/knapp.html'">Länk!</button>
+																									</li>
+																								</ul>
+																							</div>
+																							<div class="quarter">
+																								<ul class="ul white center opacity hover-opacity-off">
+																									<li class="dark-grey xlarge padding-32">Recept</li>
+																									<li class="padding-16">Ägg röra</li>
+																									<li class="padding-16">Från ica´s</li>
+																									<li class="padding-16">Recept</li>
+																									<li class="light-grey padding-24">
+																										<button class="button white padding-large hover-black" onclick="window.location.href='https://ntisod.github.io/Html/hatmail.html'">Länk!</button>
+																									</li>
+																								</ul>
+																							</div>
+																							<div class="quarter">
+																								<ul class="ul white center opacity hover-opacity-off">
+																									<li class="dark-grey xlarge padding-32">Om mig</li>
+																									<li class="padding-16">En annan sida</li>
+																									<li class="padding-16">om mig....</li>
+																									<li class="padding-16">Fast dålig version</li>
+																									<li class="light-grey padding-24">
+																										<button class="button white padding-large hover-black" onclick="window.location.href='https://ntisod.github.io/Html/om-mig-sida.html'">Länk!</button>
+																									</li>
+																								</ul>
+																							</div>
+																							<!-- End Grid/Pricing tables -->
+																						</div>
+																					</div>
+																					<!-- Testimonials -->
+																					<!--
+                                          <h3 class="padding-24 text-light-grey">My Reputation</h3><img src="/w3images/bandmember.jpg" alt="Avatar" class="left circle margin-right" style="width:80px"><p><span class="large margin-right">Chris Fox.</span> CEO at Mighty Schools.</p><p>John Doe saved us from a web disaster.</p><br><img src="/w3images/avatar_g2.jpg" alt="Avatar" class="left circle margin-right" style="width:80px"><p><span class="large margin-right">Rebecca Flex.</span> CEO at Company.</p><p>No one is better than John Doe.</p>
+                                          -->
+																					<!-- End About Section -->
+																				</div>
+																				<!-- Portfolio Section -->
+																				<div class="padding-64 content" id="photos">
+																					<h2 class="text-light-grey">Mina blenders</h2>
+																					<hr style="width:200px" class="opacity">
+																						<!-- Grid for photos -->
+																						<div class="row-padding" style="margin:0 -16px">
+																							<div class="half">
+																								<div class="img_hover_pics">
+																									<img src="Furr-Bal.png" alt="render of a furr bal" style="width:100%">
+																										<div class="hover_img_text">
+																											<p>FURR BALL</p>
+																										</div>
+																									</div>
+																									<div class="img_hover_pics">
+																										<img src="Realistic-Glas.png" alt="render of a glas" style="width:100%">
+																											<div class="hover_img_text">
+																												<p>REALISTIC GLAS</p>
+																											</div>
+																										</div>
+																										<div class="img_hover_pics">
+																											<img src="Rusty-ball-in-desert.png" alt="render fo a rusty bal in a desert" style="width:100%">
+																												<div class="hover_img_text">
+																													<p>RUSTY BALL IN DESERT</p>
+																												</div>
+																											</div>
+																											<div class="img_hover_pics">
+																												<img src="blender-wave.gif" alt="render of a wave" style="width:100%">
+																													<div class="hover_img_text">
+																														<p>80s WAVE</p>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="half" style="margin-top: 120px;">
+																												<div class="img_hover_pics">
+																													<img src="Bowling-pin.png" alt="render of a bownling pin from nasa" style="width:100%">
+																														<div class="hover_img_text">
+																															<p>NASA BOWLING PIN</p>
+																														</div>
+																													</div>
+																													<div class="img_hover_pics">
+																														<img src="Box-spin.gif" alt="render of a box spining" style="width:100%">
+																															<div class="hover_img_text">
+																																<p>BOX SPIN</p>
+																															</div>
+																														</div>
+																														<div class="img_hover_pics">
+																															<img src="Ice-Cube.png" alt="render of a ice cube" style="width:100%">
+																																<div class="hover_img_text">
+																																	<p>ICE CUBE</p>
+																																</div>
+																															</div>
+																														</div>
+																														<!-- End photo grid -->
+																													</div>
+																													<!-- End Portfolio Section -->
+																												</div>
+																												<!-- Contact Section -->
+																												<div class="padding-64 content text-grey" id="contact">
+																													<h2 class="text-light-grey">Mina kontakter</h2>
+																													<hr style="width:200px" class="opacity">
+																														<div class="section">
+																															<p>
+																																<i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Järna, Swerige
+																															
+																															</p>
+																															<p>
+																																<i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> +46 76 148 14 48
+																															
+																															</p>
+																															<p>
+																																<i class="fa fa-envelope fa-fw text-white xxlarge margin-right"></i> Email: 
+																																
+																																<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b1e1d9d8ddd8c1dcdbd4dfc2d4dff1d6dcd0d8dd9fd2dedc">[email&#160;protected]</a>
+																															</p>
+																														</div>
+																														<br>
+																															<p>Skicka ett medelande vet jag:</p>
+																															<form action="/action_page.php" target="_blank">
+																																<p>
+																																	<input class="input padding-16" type="text" placeholder="Namn" id="Name" required name="Namn">
+																																	</p>
+																																	<p>
+																																		<input class="input padding-16" type="text" placeholder="Email till vem" id="Email" required name=" till vem">
+																																		</p>
+																																		<p>
+																																			<input class="input padding-16" type="text" placeholder="Subjekt" id="Subject" required name="Subject">
+																																			</p>
+																																			<p>
+																																				<input class="input padding-16" type="text" placeholder="Medelande" id="Message" required name="Medelande">
+																																				</p>
+																																				<p>
+																																					<button class="button light-grey padding-large" type="submit" onclick="email()">
+																																						<i class="fa fa-paper-plane"></i> Skicka
+        
+																																					
+																																					</button>
+																																				</p>
+																																			</form>
+																																			<!-- End Contact Section -->
+																																		</div>
+																																		<!-- Footer -->
+																																		<footer class="content padding-64 text-grey xlarge">
+																																			<a href="https://www.facebook.com/profile.php?id=100011336126711">
+																																				<i class="fa fa-facebook-official hover-opacity"></i>
+																																			</a>
+																																			<a href="https://www.instagram.com/__philipjensen/">
+																																				<i class="fa fa-instagram hover-opacity"></i>
+																																			</a>
+																																			<a href="#">
+																																				<i class="fa fa-snapchat hover-opacity"></i>
+																																			</a>
+																																			<a onclick="sike()">
+																																				<i class="fa fa-pinterest-p hover-opacity"></i>
+																																			</a>
+																																			<a onclick="sike()">
+																																				<i class="fa fa-twitter hover-opacity"></i>
+																																			</a>
+																																			<a href="https://www.linkedin.com/in/philip-jensen-a596b2209/">
+																																				<i class="fa fa-linkedin hover-opacity"></i>
+																																			</a>
+																																			<p class="medium">Gjord utav 
+																																				
+																																				<u>Philip</u>
+																																			</p>
+																																			<!-- End footer -->
+																																		</footer>
+																																		<!-- END PAGE CONTENT -->
+																																	</div>
+																																	<div class="container">
+																																		<header>
+																																			<div class="support-note">
+																																				<!-- let's check browser support with modernizr -->
+																																				<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+																																				<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+																																				<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+																																				<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+																																				<span class="note-ie">Sorry, only modern browsers.</span>
+																																			</div>
+																																		</header>
+																																		<nav class="hide-small">
+																																			<section class="main">
+																																				<div id="sb-container" class="sb-container">
+																																					<div>
+																																						<h4>
+																																							<span>
+																																								<button onclick="change_color('cinnabar')" class="button-swatchbook">Ändra färg</button>
+																																							</span>
+																																						</h4>
+																																						<h4>
+																																							<span>Cinnabar</span>
+																																						</h4>
+																																					</div>
+																																					<div>
+																																						<h4>
+																																							<span>
+																																								<button onclick="change_color('burnt-orange')" class="button-swatchbook">Ändra färg</button>
+																																							</span>
+																																						</h4>
+																																						<h4>
+																																							<span>Burnt Orange</span>
+																																						</h4>
+																																					</div>
+																																					<div>
+																																						<h4>
+																																							<span>
+																																								<button onclick="change_color('carrot-orange')" class="button-swatchbook">Ändra färg</button>
+																																							</span>
+																																						</h4>
+																																						<h4>
+																																							<span>Carrot Orange</span>
+																																						</h4>
+																																					</div>
+																																					<div>
+																																						<h4>
+																																							<span>
+																																								<button onclick="change_color('turbo')" class="button-swatchbook">Ändra färg</button>
+																																							</span>
+																																						</h4>
+																																						<h4>
+																																							<span>Turbo</span>
+																																						</h4>
+																																					</div>
+																																					<div>
+																																						<h4>
+																																							<span>
+																																								<button onclick="change_color('lemon')" class="button-swatchbook">Ändra färg</button>
+																																							</span>
+																																						</h4>
+																																						<h4>
+																																							<span>Lemon</span>
+																																						</h4>
+																																					</div>
+																																					<div>
+																																						<h4>
+																																							<span>
+																																								<button onclick="change_color('limerick')" class="button-swatchbook">Ändra färg</button>
+																																							</span>
+																																						</h4>
+																																						<h4>
+																																							<span>Limerick</span>
+																																						</h4>
+																																					</div>
+																																					<div>
+																																						<h4>
+																																							<span>
+																																								<button onclick="change_color('water-course')" class="button-swatchbook">Ändra färg</button>
+																																							</span>
+																																						</h4>
+																																						<h4>
+																																							<span>Water
+																																								
+																																								<br>course
+																																								
+																																								</span>
+																																							</h4>
+																																						</div>
+																																						<div>
+																																							<h4>
+																																								<span>
+																																									<button onclick="change_color('curious-blue')" class="button-swatchbook">Ändra färg</button>
+																																								</span>
+																																							</h4>
+																																							<h4>
+																																								<span>Curious Blue</span>
+																																							</h4>
+																																						</div>
+																																						<div>
+																																							<h4>
+																																								<span>
+																																									<button onclick="change_color('governor-bay')" class="button-swatchbook">Ändra färg</button>
+																																								</span>
+																																							</h4>
+																																							<h4>
+																																								<span>Governor Bay</span>
+																																							</h4>
+																																						</div>
+																																						<div>
+																																							<h4>
+																																								<span>
+																																									<button onclick="change_color('affair')" class="button-swatchbook">Ändra färg</button>
+																																								</span>
+																																							</h4>
+																																							<h4>
+																																								<span>Affair</span>
+																																							</h4>
+																																						</div>
+																																						<div>
+																																							<h4>
+																																								<span>
+																																									<button onclick="change_color('medium-violet-red')" class="button-swatchbook">Ändra färg</button>
+																																								</span>
+																																							</h4>
+																																							<h4>
+																																								<span>Medium Violet Red</span>
+																																							</h4>
+																																						</div>
+																																						<div>
+																																							<h4>
+																																								<span>Färger</span>
+																																							</h4>
+																																							<span class="sb-toggle">Klicka för att öppna/stäng</span>
+																																							<span class="sb-toggle">
+																																								<button style="color: rgb(109, 109, 109);background-color: inherit;border-color: gray;" onclick="change_color('black')">Svart</button>
+																																							</span>
+																																						</div>
+																																					</div>
+																																					<!-- sb-container -->
+																																				</section>
+																																			</nav>
+																																		</div>
+																																		<div style="height: 200px;"></div>
+																																		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+																																	</body>
+																																</html>
